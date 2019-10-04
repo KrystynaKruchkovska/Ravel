@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		0413A35D234773870061CF9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0413A35C234773870061CF9B /* AppDelegate.swift */; };
 		0413A35F234773870061CF9B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0413A35E234773870061CF9B /* SceneDelegate.swift */; };
-		0413A361234773870061CF9B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0413A360234773870061CF9B /* ViewController.swift */; };
-		0413A364234773870061CF9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0413A362234773870061CF9B /* Main.storyboard */; };
 		0413A366234773910061CF9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0413A365234773910061CF9B /* Assets.xcassets */; };
 		0413A369234773910061CF9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0413A367234773910061CF9B /* LaunchScreen.storyboard */; };
 		0413A374234773920061CF9B /* RavelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0413A373234773920061CF9B /* RavelTests.swift */; };
 		0413A37F234773920061CF9B /* RavelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0413A37E234773920061CF9B /* RavelUITests.swift */; };
+		0413A38E234773E40061CF9B /* AppFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0413A38D234773E40061CF9B /* AppFlowCoordinator.swift */; };
+		0413A391234774E40061CF9B /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0413A390234774E40061CF9B /* RegistrationViewController.swift */; };
+		0413A3942347774A0061CF9B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0413A3932347774A0061CF9B /* User.swift */; };
+		0413A39723478DDF0061CF9B /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0413A39623478DDF0061CF9B /* CustomView.swift */; };
+		0413A39A234793030061CF9B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0413A399234793030061CF9B /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +41,6 @@
 		0413A359234773870061CF9B /* Ravel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ravel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0413A35C234773870061CF9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0413A35E234773870061CF9B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0413A360234773870061CF9B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0413A363234773870061CF9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0413A365234773910061CF9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0413A368234773910061CF9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0413A36A234773910061CF9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +50,12 @@
 		0413A37A234773920061CF9B /* RavelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RavelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0413A37E234773920061CF9B /* RavelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RavelUITests.swift; sourceTree = "<group>"; };
 		0413A380234773920061CF9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0413A38D234773E40061CF9B /* AppFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlowCoordinator.swift; sourceTree = "<group>"; };
+		0413A390234774E40061CF9B /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		0413A3932347774A0061CF9B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		0413A39523477A8B0061CF9B /* Ravel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Ravel.entitlements; sourceTree = "<group>"; };
+		0413A39623478DDF0061CF9B /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		0413A399234793030061CF9B /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +106,12 @@
 		0413A35B234773870061CF9B /* Ravel */ = {
 			isa = PBXGroup;
 			children = (
-				0413A35C234773870061CF9B /* AppDelegate.swift */,
-				0413A35E234773870061CF9B /* SceneDelegate.swift */,
-				0413A360234773870061CF9B /* ViewController.swift */,
-				0413A362234773870061CF9B /* Main.storyboard */,
+				0413A39B234793C00061CF9B /* Extensions */,
+				0413A398234792E90061CF9B /* Utilities */,
+				0413A39523477A8B0061CF9B /* Ravel.entitlements */,
+				0413A392234777360061CF9B /* Models */,
+				0413A38C234773A00061CF9B /* Application */,
+				0413A38F234774AF0061CF9B /* RegistrationFlow */,
 				0413A365234773910061CF9B /* Assets.xcassets */,
 				0413A367234773910061CF9B /* LaunchScreen.storyboard */,
 				0413A36A234773910061CF9B /* Info.plist */,
@@ -126,6 +135,48 @@
 				0413A380234773920061CF9B /* Info.plist */,
 			);
 			path = RavelUITests;
+			sourceTree = "<group>";
+		};
+		0413A38C234773A00061CF9B /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				0413A35C234773870061CF9B /* AppDelegate.swift */,
+				0413A35E234773870061CF9B /* SceneDelegate.swift */,
+				0413A38D234773E40061CF9B /* AppFlowCoordinator.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		0413A38F234774AF0061CF9B /* RegistrationFlow */ = {
+			isa = PBXGroup;
+			children = (
+				0413A390234774E40061CF9B /* RegistrationViewController.swift */,
+				0413A39623478DDF0061CF9B /* CustomView.swift */,
+			);
+			path = RegistrationFlow;
+			sourceTree = "<group>";
+		};
+		0413A392234777360061CF9B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0413A3932347774A0061CF9B /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0413A398234792E90061CF9B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				0413A399234793030061CF9B /* Colors.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		0413A39B234793C00061CF9B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,7 +285,6 @@
 			files = (
 				0413A369234773910061CF9B /* LaunchScreen.storyboard in Resources */,
 				0413A366234773910061CF9B /* Assets.xcassets in Resources */,
-				0413A364234773870061CF9B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +309,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0413A361234773870061CF9B /* ViewController.swift in Sources */,
+				0413A38E234773E40061CF9B /* AppFlowCoordinator.swift in Sources */,
 				0413A35D234773870061CF9B /* AppDelegate.swift in Sources */,
+				0413A391234774E40061CF9B /* RegistrationViewController.swift in Sources */,
+				0413A39A234793030061CF9B /* Colors.swift in Sources */,
+				0413A39723478DDF0061CF9B /* CustomView.swift in Sources */,
+				0413A3942347774A0061CF9B /* User.swift in Sources */,
 				0413A35F234773870061CF9B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,14 +351,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0413A362234773870061CF9B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0413A363234773870061CF9B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0413A367234773910061CF9B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -434,6 +480,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Ravel/Ravel.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V8ZG3WLBMM;
 				INFOPLIST_FILE = Ravel/Info.plist;
@@ -452,6 +499,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Ravel/Ravel.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V8ZG3WLBMM;
 				INFOPLIST_FILE = Ravel/Info.plist;
