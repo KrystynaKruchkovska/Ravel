@@ -8,7 +8,25 @@
 
 import UIKit
 
+protocol RegistrationViewControllerDelegate {
+    
+    func signInPressed()
+    func signUpPressed()
+    func signUpWithFacebookPressed()
+}
+
 class RegistrationViewController: UIViewController {
+    
+    private var delegate: RegistrationViewControllerDelegate!
+    
+    init(delegate:RegistrationViewControllerDelegate){
+        super.init(nibName: nil, bundle: nil)
+        self.delegate = delegate
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     private var customView: CustomView {
         return view as! CustomView
@@ -23,20 +41,35 @@ class RegistrationViewController: UIViewController {
         super.viewDidLoad()
 
         view.backgroundColor = CustomColors.dark_purple.value
+        
+        customView.signInButton.addTarget(self, action: #selector(signInButtonAction), for: .touchDown)
+        
+        customView.signUpButton.addTarget(self, action: #selector(signUpButtonAction), for: .touchDown)
+        
+         customView.signUpWithFacebook.addTarget(self, action: #selector(signInWithFacebookAction), for: .touchDown)
+        
       
 
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
     }
-    */
 
+    
+    @objc func signInButtonAction(){
+        delegate.signInPressed()
+    }
+    
+    @objc func signUpButtonAction(){
+        delegate.signUpPressed()
+    }
+
+    
+    @objc func signInWithFacebookAction(){
+        delegate.signUpWithFacebookPressed()
+    }
+    
 }

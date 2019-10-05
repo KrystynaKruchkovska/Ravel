@@ -10,7 +10,7 @@ import UIKit
 
 class Coordinator {
     var next: Coordinator?
-    var rootController: UIViewController?
+    var rootViewController: UIViewController?
 }
 
 class AppFlowCoordinator: Coordinator {
@@ -22,9 +22,41 @@ class AppFlowCoordinator: Coordinator {
     }
     
     func initApp() {
-        rootController = RegistrationViewController()
-        window.rootViewController = rootController
+        rootViewController = UINavigationController()
+        window.rootViewController = rootViewController
         window.makeKeyAndVisible()
+        runRegistrationVC()
     }
+    
+    private func runRegistrationVC() {
+        let vc = RegistrationViewController(delegate: self)
+        //vc.modalPresentationStyle = .fullScreen
+        rootViewController?.show(vc, sender: true)
+    }
+    
+    private func runSignUpVC() {
+        let vc = SignUpViewController()
+        //vc.modalPresentationStyle = .fullScreen
+        rootViewController?.show(vc, sender: true)
+    }
+    
+}
+
+
+
+extension AppFlowCoordinator: RegistrationViewControllerDelegate {
+    func signInPressed() {
+        print("signInPressed")
+    }
+    
+    func signUpPressed() {
+        print("signUpPressed")
+        runSignUpVC()
+    }
+    
+    func signUpWithFacebookPressed() {
+        print("signUpWithFacebookPressed")
+    }
+    
     
 }

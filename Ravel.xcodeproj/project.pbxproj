@@ -18,6 +18,12 @@
 		0413A3942347774A0061CF9B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0413A3932347774A0061CF9B /* User.swift */; };
 		0413A39723478DDF0061CF9B /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0413A39623478DDF0061CF9B /* CustomView.swift */; };
 		0413A39A234793030061CF9B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0413A399234793030061CF9B /* Colors.swift */; };
+		0413A3A023490C120061CF9B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0413A39F23490C120061CF9B /* SignUpViewController.swift */; };
+		0413A3A223490C580061CF9B /* UITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0413A3A123490C580061CF9B /* UITextField+Extensions.swift */; };
+		0413A3A423490CDD0061CF9B /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0413A3A323490CDD0061CF9B /* UIButton+Extensions.swift */; };
+		0413A3A623490D750061CF9B /* SignUpCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0413A3A523490D750061CF9B /* SignUpCustomView.swift */; };
+		0413A3A823490E940061CF9B /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0413A3A723490E940061CF9B /* UIImageView.swift */; };
+		0413A3AA234910F60061CF9B /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0413A3A9234910F60061CF9B /* UIView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +62,12 @@
 		0413A39523477A8B0061CF9B /* Ravel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Ravel.entitlements; sourceTree = "<group>"; };
 		0413A39623478DDF0061CF9B /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		0413A399234793030061CF9B /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		0413A39F23490C120061CF9B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		0413A3A123490C580061CF9B /* UITextField+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extensions.swift"; sourceTree = "<group>"; };
+		0413A3A323490CDD0061CF9B /* UIButton+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extensions.swift"; sourceTree = "<group>"; };
+		0413A3A523490D750061CF9B /* SignUpCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpCustomView.swift; sourceTree = "<group>"; };
+		0413A3A723490E940061CF9B /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		0413A3A9234910F60061CF9B /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +123,7 @@
 				0413A39523477A8B0061CF9B /* Ravel.entitlements */,
 				0413A392234777360061CF9B /* Models */,
 				0413A38C234773A00061CF9B /* Application */,
+				0413A39E23490BE60061CF9B /* SignUpFlow */,
 				0413A38F234774AF0061CF9B /* RegistrationFlow */,
 				0413A365234773910061CF9B /* Assets.xcassets */,
 				0413A367234773910061CF9B /* LaunchScreen.storyboard */,
@@ -175,8 +188,21 @@
 		0413A39B234793C00061CF9B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				0413A3A123490C580061CF9B /* UITextField+Extensions.swift */,
+				0413A3A323490CDD0061CF9B /* UIButton+Extensions.swift */,
+				0413A3A723490E940061CF9B /* UIImageView.swift */,
+				0413A3A9234910F60061CF9B /* UIView+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0413A39E23490BE60061CF9B /* SignUpFlow */ = {
+			isa = PBXGroup;
+			children = (
+				0413A39F23490C120061CF9B /* SignUpViewController.swift */,
+				0413A3A523490D750061CF9B /* SignUpCustomView.swift */,
+			);
+			path = SignUpFlow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,9 +337,15 @@
 			files = (
 				0413A38E234773E40061CF9B /* AppFlowCoordinator.swift in Sources */,
 				0413A35D234773870061CF9B /* AppDelegate.swift in Sources */,
+				0413A3A023490C120061CF9B /* SignUpViewController.swift in Sources */,
+				0413A3A423490CDD0061CF9B /* UIButton+Extensions.swift in Sources */,
+				0413A3A823490E940061CF9B /* UIImageView.swift in Sources */,
+				0413A3AA234910F60061CF9B /* UIView+Extensions.swift in Sources */,
 				0413A391234774E40061CF9B /* RegistrationViewController.swift in Sources */,
 				0413A39A234793030061CF9B /* Colors.swift in Sources */,
+				0413A3A623490D750061CF9B /* SignUpCustomView.swift in Sources */,
 				0413A39723478DDF0061CF9B /* CustomView.swift in Sources */,
+				0413A3A223490C580061CF9B /* UITextField+Extensions.swift in Sources */,
 				0413A3942347774A0061CF9B /* User.swift in Sources */,
 				0413A35F234773870061CF9B /* SceneDelegate.swift in Sources */,
 			);
