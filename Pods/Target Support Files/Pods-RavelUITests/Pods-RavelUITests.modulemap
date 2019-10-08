@@ -1,0 +1,6 @@
+framework module Pods_RavelUITests {
+  umbrella header "Pods-RavelUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -17,7 +17,6 @@ class SignUpCustomView: UIView {
         addSubview(stackView)
         addSubview(signUpButton)
         
-        
         imageView.anchor(top: topAnchor, paddingTop: 0, bottom: bottomAnchor, paddingBottom: 0, left: leftAnchor, paddingLeft: 0, right: rightAnchor, paddingRight: 0, centerX: nil, centerY: nil,  width: 0, height: 0)
         
         label.anchor(top: self.topAnchor, paddingTop: 200, bottom: nil, paddingBottom: 0, left: nil, paddingLeft: 0, right: nil, paddingRight: 0, centerX: self.centerXAnchor, centerY: nil, width: 0, height: 50)
@@ -91,6 +90,5 @@ class SignUpCustomView: UIView {
         
         return button
     }()
-    
     
 }

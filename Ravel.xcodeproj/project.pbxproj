@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,7 +14,7 @@
 		0413A374234773920061CF9B /* RavelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0413A373234773920061CF9B /* RavelTests.swift */; };
 		0413A37F234773920061CF9B /* RavelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0413A37E234773920061CF9B /* RavelUITests.swift */; };
 		0413A38E234773E40061CF9B /* AppFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0413A38D234773E40061CF9B /* AppFlowCoordinator.swift */; };
-		0413A391234774E40061CF9B /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0413A390234774E40061CF9B /* RegistrationViewController.swift */; };
+		0413A391234774E40061CF9B /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0413A390234774E40061CF9B /* SignInViewController.swift */; };
 		0413A3942347774A0061CF9B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0413A3932347774A0061CF9B /* User.swift */; };
 		0413A39723478DDF0061CF9B /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0413A39623478DDF0061CF9B /* CustomView.swift */; };
 		0413A39A234793030061CF9B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0413A399234793030061CF9B /* Colors.swift */; };
@@ -24,6 +24,18 @@
 		0413A3A623490D750061CF9B /* SignUpCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0413A3A523490D750061CF9B /* SignUpCustomView.swift */; };
 		0413A3A823490E940061CF9B /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0413A3A723490E940061CF9B /* UIImageView.swift */; };
 		0413A3AA234910F60061CF9B /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0413A3A9234910F60061CF9B /* UIView+Extensions.swift */; };
+		0413A3AD234B37530061CF9B /* TeamManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0413A3AC234B37520061CF9B /* TeamManager.swift */; };
+		0413A3AF234B3B120061CF9B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0413A3AE234B3B110061CF9B /* GoogleService-Info.plist */; };
+		042ADF4E234B700100E6B5A9 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042ADF4D234B700100E6B5A9 /* AlertController.swift */; };
+		04837BC5234B7A6700F40808 /* AuthServise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04837BC4234B7A6700F40808 /* AuthServise.swift */; };
+		04837BC7234B7B6600F40808 /* FirebaseAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04837BC6234B7B6600F40808 /* FirebaseAuthService.swift */; };
+		04837BC9234C762400F40808 /* TextFieldInfoValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04837BC8234C762400F40808 /* TextFieldInfoValidator.swift */; };
+		04837BCB234C7A2D00F40808 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04837BCA234C7A2D00F40808 /* SignInViewModel.swift */; };
+		04837BCD234C7FD400F40808 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04837BCC234C7FD400F40808 /* SignUpViewModel.swift */; };
+		04837BD0234C879000F40808 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04837BCF234C879000F40808 /* MainController.swift */; };
+		9D519BB983158C6FB2E5D3B8 /* Pods_Ravel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F82DE110CA18174967B2E56 /* Pods_Ravel.framework */; };
+		DEE8047296C31A0C254DA694 /* Pods_RavelTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8287BC18492F1162F46F8CA2 /* Pods_RavelTests.framework */; };
+		E60849698C7BCA47FF62C39A /* Pods_RavelUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E28DBAA52235C08F8D2322F4 /* Pods_RavelUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +69,7 @@
 		0413A37E234773920061CF9B /* RavelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RavelUITests.swift; sourceTree = "<group>"; };
 		0413A380234773920061CF9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0413A38D234773E40061CF9B /* AppFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlowCoordinator.swift; sourceTree = "<group>"; };
-		0413A390234774E40061CF9B /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		0413A390234774E40061CF9B /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		0413A3932347774A0061CF9B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		0413A39523477A8B0061CF9B /* Ravel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Ravel.entitlements; sourceTree = "<group>"; };
 		0413A39623478DDF0061CF9B /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
@@ -68,6 +80,24 @@
 		0413A3A523490D750061CF9B /* SignUpCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpCustomView.swift; sourceTree = "<group>"; };
 		0413A3A723490E940061CF9B /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		0413A3A9234910F60061CF9B /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		0413A3AC234B37520061CF9B /* TeamManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamManager.swift; sourceTree = "<group>"; };
+		0413A3AE234B3B110061CF9B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		042ADF4D234B700100E6B5A9 /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
+		04837BC4234B7A6700F40808 /* AuthServise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServise.swift; sourceTree = "<group>"; };
+		04837BC6234B7B6600F40808 /* FirebaseAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthService.swift; sourceTree = "<group>"; };
+		04837BC8234C762400F40808 /* TextFieldInfoValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldInfoValidator.swift; sourceTree = "<group>"; };
+		04837BCA234C7A2D00F40808 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		04837BCC234C7FD400F40808 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		04837BCF234C879000F40808 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		15D840DF6EF1F1876727C965 /* Pods-Ravel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ravel.debug.xcconfig"; path = "Target Support Files/Pods-Ravel/Pods-Ravel.debug.xcconfig"; sourceTree = "<group>"; };
+		29097AE70A80F40B728B3C78 /* Pods-RavelUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RavelUITests.debug.xcconfig"; path = "Target Support Files/Pods-RavelUITests/Pods-RavelUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2F82DE110CA18174967B2E56 /* Pods_Ravel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ravel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		328DE2BE9FE2AC01DE36117B /* Pods-RavelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RavelTests.release.xcconfig"; path = "Target Support Files/Pods-RavelTests/Pods-RavelTests.release.xcconfig"; sourceTree = "<group>"; };
+		52C08C5535A6F352C926C781 /* Pods-RavelUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RavelUITests.release.xcconfig"; path = "Target Support Files/Pods-RavelUITests/Pods-RavelUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8287BC18492F1162F46F8CA2 /* Pods_RavelTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RavelTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E28DBAA52235C08F8D2322F4 /* Pods_RavelUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RavelUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF78B8296A1CBED963D52E95 /* Pods-Ravel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ravel.release.xcconfig"; path = "Target Support Files/Pods-Ravel/Pods-Ravel.release.xcconfig"; sourceTree = "<group>"; };
+		F8D902C696E445847B50AF1E /* Pods-RavelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RavelTests.debug.xcconfig"; path = "Target Support Files/Pods-RavelTests/Pods-RavelTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D519BB983158C6FB2E5D3B8 /* Pods_Ravel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEE8047296C31A0C254DA694 /* Pods_RavelTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +121,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E60849698C7BCA47FF62C39A /* Pods_RavelUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +135,8 @@
 				0413A372234773920061CF9B /* RavelTests */,
 				0413A37D234773920061CF9B /* RavelUITests */,
 				0413A35A234773870061CF9B /* Products */,
+				29946DDAA20683E7E278326E /* Pods */,
+				C4558DF677DF60CE5C889139 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,16 +153,20 @@
 		0413A35B234773870061CF9B /* Ravel */ = {
 			isa = PBXGroup;
 			children = (
+				0413A38C234773A00061CF9B /* Application */,
+				04837BC3234B7A3600F40808 /* Services */,
+				0413A3AB234B37370061CF9B /* Managers */,
 				0413A39B234793C00061CF9B /* Extensions */,
 				0413A398234792E90061CF9B /* Utilities */,
 				0413A39523477A8B0061CF9B /* Ravel.entitlements */,
 				0413A392234777360061CF9B /* Models */,
-				0413A38C234773A00061CF9B /* Application */,
 				0413A39E23490BE60061CF9B /* SignUpFlow */,
-				0413A38F234774AF0061CF9B /* RegistrationFlow */,
+				0413A38F234774AF0061CF9B /* SignInFlow */,
+				04837BCE234C872B00F40808 /* MainFlow */,
 				0413A365234773910061CF9B /* Assets.xcassets */,
 				0413A367234773910061CF9B /* LaunchScreen.storyboard */,
 				0413A36A234773910061CF9B /* Info.plist */,
+				0413A3AE234B3B110061CF9B /* GoogleService-Info.plist */,
 			);
 			path = Ravel;
 			sourceTree = "<group>";
@@ -160,13 +199,14 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
-		0413A38F234774AF0061CF9B /* RegistrationFlow */ = {
+		0413A38F234774AF0061CF9B /* SignInFlow */ = {
 			isa = PBXGroup;
 			children = (
-				0413A390234774E40061CF9B /* RegistrationViewController.swift */,
+				0413A390234774E40061CF9B /* SignInViewController.swift */,
 				0413A39623478DDF0061CF9B /* CustomView.swift */,
+				04837BCA234C7A2D00F40808 /* SignInViewModel.swift */,
 			);
-			path = RegistrationFlow;
+			path = SignInFlow;
 			sourceTree = "<group>";
 		};
 		0413A392234777360061CF9B /* Models */ = {
@@ -181,6 +221,8 @@
 			isa = PBXGroup;
 			children = (
 				0413A399234793030061CF9B /* Colors.swift */,
+				042ADF4D234B700100E6B5A9 /* AlertController.swift */,
+				04837BC8234C762400F40808 /* TextFieldInfoValidator.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -201,8 +243,57 @@
 			children = (
 				0413A39F23490C120061CF9B /* SignUpViewController.swift */,
 				0413A3A523490D750061CF9B /* SignUpCustomView.swift */,
+				04837BCC234C7FD400F40808 /* SignUpViewModel.swift */,
 			);
 			path = SignUpFlow;
+			sourceTree = "<group>";
+		};
+		0413A3AB234B37370061CF9B /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				0413A3AC234B37520061CF9B /* TeamManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		04837BC3234B7A3600F40808 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				04837BC4234B7A6700F40808 /* AuthServise.swift */,
+				04837BC6234B7B6600F40808 /* FirebaseAuthService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		04837BCE234C872B00F40808 /* MainFlow */ = {
+			isa = PBXGroup;
+			children = (
+				04837BCF234C879000F40808 /* MainController.swift */,
+			);
+			path = MainFlow;
+			sourceTree = "<group>";
+		};
+		29946DDAA20683E7E278326E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				15D840DF6EF1F1876727C965 /* Pods-Ravel.debug.xcconfig */,
+				EF78B8296A1CBED963D52E95 /* Pods-Ravel.release.xcconfig */,
+				F8D902C696E445847B50AF1E /* Pods-RavelTests.debug.xcconfig */,
+				328DE2BE9FE2AC01DE36117B /* Pods-RavelTests.release.xcconfig */,
+				29097AE70A80F40B728B3C78 /* Pods-RavelUITests.debug.xcconfig */,
+				52C08C5535A6F352C926C781 /* Pods-RavelUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C4558DF677DF60CE5C889139 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F82DE110CA18174967B2E56 /* Pods_Ravel.framework */,
+				8287BC18492F1162F46F8CA2 /* Pods_RavelTests.framework */,
+				E28DBAA52235C08F8D2322F4 /* Pods_RavelUITests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,9 +303,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0413A383234773920061CF9B /* Build configuration list for PBXNativeTarget "Ravel" */;
 			buildPhases = (
+				15F6C990DD864E10CE602100 /* [CP] Check Pods Manifest.lock */,
 				0413A355234773860061CF9B /* Sources */,
 				0413A356234773860061CF9B /* Frameworks */,
 				0413A357234773860061CF9B /* Resources */,
+				E122E9D24ACC7D2F14E71A12 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -229,6 +322,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0413A386234773920061CF9B /* Build configuration list for PBXNativeTarget "RavelTests" */;
 			buildPhases = (
+				7BBE61A83FAE818D6227057F /* [CP] Check Pods Manifest.lock */,
 				0413A36B234773920061CF9B /* Sources */,
 				0413A36C234773920061CF9B /* Frameworks */,
 				0413A36D234773920061CF9B /* Resources */,
@@ -247,6 +341,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0413A389234773920061CF9B /* Build configuration list for PBXNativeTarget "RavelUITests" */;
 			buildPhases = (
+				5FA9CA1DED037D65AEA79CEF /* [CP] Check Pods Manifest.lock */,
 				0413A376234773920061CF9B /* Sources */,
 				0413A377234773920061CF9B /* Frameworks */,
 				0413A378234773920061CF9B /* Resources */,
@@ -311,6 +406,7 @@
 			files = (
 				0413A369234773910061CF9B /* LaunchScreen.storyboard in Resources */,
 				0413A366234773910061CF9B /* Assets.xcassets in Resources */,
+				0413A3AF234B3B120061CF9B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,24 +426,118 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		15F6C990DD864E10CE602100 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ravel-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5FA9CA1DED037D65AEA79CEF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RavelUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7BBE61A83FAE818D6227057F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RavelTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E122E9D24ACC7D2F14E71A12 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ravel/Pods-Ravel-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Ravel/Pods-Ravel-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Ravel/Pods-Ravel-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0413A355234773860061CF9B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0413A38E234773E40061CF9B /* AppFlowCoordinator.swift in Sources */,
+				04837BD0234C879000F40808 /* MainController.swift in Sources */,
+				042ADF4E234B700100E6B5A9 /* AlertController.swift in Sources */,
+				04837BCD234C7FD400F40808 /* SignUpViewModel.swift in Sources */,
 				0413A35D234773870061CF9B /* AppDelegate.swift in Sources */,
+				04837BCB234C7A2D00F40808 /* SignInViewModel.swift in Sources */,
 				0413A3A023490C120061CF9B /* SignUpViewController.swift in Sources */,
+				04837BC9234C762400F40808 /* TextFieldInfoValidator.swift in Sources */,
 				0413A3A423490CDD0061CF9B /* UIButton+Extensions.swift in Sources */,
 				0413A3A823490E940061CF9B /* UIImageView.swift in Sources */,
 				0413A3AA234910F60061CF9B /* UIView+Extensions.swift in Sources */,
-				0413A391234774E40061CF9B /* RegistrationViewController.swift in Sources */,
+				0413A391234774E40061CF9B /* SignInViewController.swift in Sources */,
 				0413A39A234793030061CF9B /* Colors.swift in Sources */,
 				0413A3A623490D750061CF9B /* SignUpCustomView.swift in Sources */,
 				0413A39723478DDF0061CF9B /* CustomView.swift in Sources */,
+				04837BC7234B7B6600F40808 /* FirebaseAuthService.swift in Sources */,
 				0413A3A223490C580061CF9B /* UITextField+Extensions.swift in Sources */,
 				0413A3942347774A0061CF9B /* User.swift in Sources */,
+				0413A3AD234B37530061CF9B /* TeamManager.swift in Sources */,
 				0413A35F234773870061CF9B /* SceneDelegate.swift in Sources */,
+				04837BC5234B7A6700F40808 /* AuthServise.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,6 +700,7 @@
 		};
 		0413A384234773920061CF9B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15D840DF6EF1F1876727C965 /* Pods-Ravel.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Ravel/Ravel.entitlements;
@@ -529,6 +720,7 @@
 		};
 		0413A385234773920061CF9B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF78B8296A1CBED963D52E95 /* Pods-Ravel.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Ravel/Ravel.entitlements;
@@ -548,6 +740,7 @@
 		};
 		0413A387234773920061CF9B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8D902C696E445847B50AF1E /* Pods-RavelTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -570,6 +763,7 @@
 		};
 		0413A388234773920061CF9B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 328DE2BE9FE2AC01DE36117B /* Pods-RavelTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -592,6 +786,7 @@
 		};
 		0413A38A234773920061CF9B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29097AE70A80F40B728B3C78 /* Pods-RavelUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -612,6 +807,7 @@
 		};
 		0413A38B234773920061CF9B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52C08C5535A6F352C926C781 /* Pods-RavelUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

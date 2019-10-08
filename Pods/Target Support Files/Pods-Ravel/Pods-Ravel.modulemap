@@ -1,0 +1,6 @@
+framework module Pods_Ravel {
+  umbrella header "Pods-Ravel-umbrella.h"
+
+  export *
+  module * { export * }
+}

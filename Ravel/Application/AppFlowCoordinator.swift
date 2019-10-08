@@ -25,32 +25,36 @@ class AppFlowCoordinator: Coordinator {
         rootViewController = UINavigationController()
         window.rootViewController = rootViewController
         window.makeKeyAndVisible()
-        runRegistrationVC()
+        runSignInVC()
     }
     
-    private func runRegistrationVC() {
-        let vc = RegistrationViewController(delegate: self)
+    private func runSignInVC() {
+        let vc = SignInViewController(delegate: self, viewModel: SignInViewModel(authService: FirebaseAuthService()))
         //vc.modalPresentationStyle = .fullScreen
-        rootViewController?.show(vc, sender: true)
+        rootViewController?.show(vc, sender: nil)
     }
     
     private func runSignUpVC() {
-        let vc = SignUpViewController()
-        //vc.modalPresentationStyle = .fullScreen
-        rootViewController?.show(vc, sender: true)
+        let vc = SignUpViewController(viewModel: SignUpViewModel(authService: FirebaseAuthService()))
+        rootViewController?.show(vc, sender: nil)
+    }
+    
+    private func runMainVC() {
+        let vc = MainController()
+        rootViewController?.show(vc, sender: nil)
     }
     
 }
 
 
 
-extension AppFlowCoordinator: RegistrationViewControllerDelegate {
+extension AppFlowCoordinator: SignInViewControllerDelegate {
     func signInPressed() {
+        runMainVC()
         print("signInPressed")
     }
     
     func signUpPressed() {
-        print("signUpPressed")
         runSignUpVC()
     }
     
