@@ -88,6 +88,9 @@ class CustomView: UIView {
         let button = UIButton.setUp()
         button.setTitle("Continue with Facebook", for: .normal)
         button.backgroundColor = CustomColors.facebook.value
+        button.setImage(#imageLiteral(resourceName: "facebookButton").withRenderingMode(.alwaysTemplate), for: .normal)
+        button.contentMode = .scaleAspectFit
+        button.tintColor = .white
         
         return button
     }()

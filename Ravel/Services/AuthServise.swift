@@ -10,13 +10,13 @@ import Foundation
 
 protocol AuthService {
     
-    func createUser(nickname:String,email:String, password:String, handler:@escaping (_ error:Error?,_ user:CustomUser?) -> ())
+    func createUser(nickname: String, email: String, password:String, handler:@escaping (_ error:Error?,_ user:CustomUser?) -> ())
     
-    func sendVerificationEmail(user:CustomUser, handler:@escaping (_ error:Error?)->())
+    func sendVerificationEmail(user:CustomUser, handler:@escaping (_ error: Error?)->())
     
-    func signInUser(email:String,password:String, handler:@escaping (_ error:Error?,_ user:CustomUser?) -> ())
+    func signInUser(email: String, password: String, handler:@escaping (_ error: Error?,_ user:CustomUser?) -> ())
     
-    func resetPassword(email:String, handler:@escaping (_ error:Error?) -> ())
+    func resetPassword(email: String, handler: @escaping (_ error: Error?) -> ())
     
-    func loginWithFacebook(_ credentials: NSObject?, handler:@escaping (_ error:Error?,_ user:CustomUser?) -> ())
+    func loginWithFacebook( handler: @escaping (_ error:Error?,_ user: CustomUser?) -> ())
 }

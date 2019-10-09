@@ -58,7 +58,8 @@ extension AppFlowCoordinator: SignInViewControllerDelegate {
         runSignUpVC()
     }
     
-    func signUpWithFacebookPressed() {
+    func signUpWithFacebookSuccessed() {
+        runMainVC()
         print("signUpWithFacebookPressed")
     }
     

@@ -16,7 +16,11 @@ class SignInViewModel {
         self.authService = authService
     }
     
-    func signIn(email: String, password: String, handler:@escaping (_ error:Error?, _ user: CustomUser?) -> ()) {
+    func signIn(email: String, password: String, handler: @escaping (_ error:Error?, _ user: CustomUser?) -> ()) {
         self.authService.signInUser(email: email, password: password, handler: handler)
+    }
+    
+    func signInWithFaceBook(handler: @escaping (_ error:Error?, _ user: CustomUser?) -> ()) {
+        self.authService.loginWithFacebook(handler: handler)
     }
 }

@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import FacebookCore
+import FacebookLogin
 
 protocol SignInViewControllerDelegate {
     
     func signInPressed()
     func signUpPressed()
-    func signUpWithFacebookPressed()
+    func signUpWithFacebookSuccessed()
 }
 
 class SignInViewController: UIViewController {
@@ -50,7 +52,6 @@ class SignInViewController: UIViewController {
         
          customView.signUpWithFacebook.addTarget(self, action: #selector(signInWithFacebookAction), for: .touchDown)
         
-      
 
         // Do any additional setup after loading the view.
     }
@@ -82,13 +83,31 @@ class SignInViewController: UIViewController {
         }
     }
     
+    
     @objc func signUpButtonAction(){
         delegate.signUpPressed()
     }
 
     
     @objc func signInWithFacebookAction(){
-        delegate.signUpWithFacebookPressed()
+        let loginManager = LoginManager()
+        loginManager.logIn(permissions: [.publicProfile, .email], viewController: self) { (result) in
+            switch result {
+            case .success(granted: _, declined: _, token: _):
+                print("success")
+                self.viewModel.signInWithFaceBook { [weak self] (error, user) in
+                    if let user = user {
+                        self?.delegate.signUpWithFacebookSuccessed()
+                    }
+                    
+                }
+            case .failed(let error):
+                print(error)
+            case .cancelled:
+                print("cancelled")
+            }
+        }
+        
     }
     
 }

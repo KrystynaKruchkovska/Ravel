@@ -8,30 +8,34 @@
 
 import Foundation
 import Firebase
+import FacebookLogin
+import FacebookCore
 
 
 class FirebaseAuthService: AuthService {
 
     
-    func loginWithFacebook(_ credentials: NSObject?, handler: @escaping (Error?, CustomUser?) -> ()) {
-                Auth.auth().signIn(with: credentials as! AuthCredential) { (dataResult, error) in
-                        if let error = error {
-                print(error)
-                handler(error, nil)
-                return
+    func loginWithFacebook(handler: @escaping (Error?, CustomUser?) -> ()) {
+        
+        if let accessToken = AccessToken.current?.tokenString {
+           
+            let credentials = FacebookAuthProvider.credential(withAccessToken: accessToken)
+            Auth.auth().signIn(with: credentials) { (dataResult, error) in
+                if let error = error {
+                    handler(error, nil)
+                    return
+                }
+                guard let user = dataResult?.user else {
+                    return
+                }
+                
+                handler(nil, FirebaseUser(withUser: user))
             }
-            
-            guard let user = dataResult?.user else {
-                           return
-                       }
-                       
-                       print("user is signed in with facebook")
-                       
-                    handler(nil, FirebaseUser(withUser: user))
         }
+
     }
     
-
+    
     
     
     func resetPassword(email: String, handler: @escaping (_ error: Error?) -> ()) {
@@ -46,7 +50,7 @@ class FirebaseAuthService: AuthService {
         }
     }
     
- 
+    
     func createUser(nickname: String, email: String, password: String, handler: @escaping (_ error: Error?,_ user: CustomUser?) -> ()) {
         Auth.auth().createUser(withEmail: email, password: password) { (authResult, error) in
             
@@ -61,7 +65,7 @@ class FirebaseAuthService: AuthService {
                 handler(error, nil)
                 return
             }
-       
+            
             handler(nil, FirebaseUser(withUser: user))
         }
         
@@ -80,12 +84,11 @@ class FirebaseAuthService: AuthService {
         })
     }
     
-
+    
     func signInUser(email:String,password:String, handler:@escaping (_ error:Error?, _ user:CustomUser?) -> ()) {
         Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
             
             if let error = error {
-                print("login user error: \(error)")
                 handler(error, nil)
                 return
             }
@@ -95,11 +98,11 @@ class FirebaseAuthService: AuthService {
                 handler(error, nil)
                 return
             }
-
+            
             handler(nil, FirebaseUser(withUser: user))
         }
     }
     
-   
+    
     
 }
