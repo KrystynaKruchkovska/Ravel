@@ -8,12 +8,18 @@
 
 import UIKit
 
+protocol SignUpViewControllerDelegate {
+    func userCreatedSuccessfully()
+}
+
 class SignUpViewController: UIViewController {
     
-    var viewModel: SignUpViewModel
+    private var viewModel: SignUpViewModel
+    private var delegate: SignUpViewControllerDelegate
     
-    init(viewModel: SignUpViewModel) {
+    init(viewModel: SignUpViewModel, delegate: SignUpViewControllerDelegate) {
         self.viewModel = viewModel
+        self.delegate = delegate
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -54,11 +60,31 @@ class SignUpViewController: UIViewController {
                 self.viewModel.createUser(nickname: userName, email: userEmail, password: userPassword) { (error, user) in
                     if let error = error {
                         AlertController.showAlert(self, title: "Ouch!", message: error.localizedDescription)
+                        return
+                    }
+                    if let user = user {
+                        self.verifyUserWithEmail(user)
                     }
                 }
             }
-            
         }
+    }
+    
+    private func verifyUserWithEmail(_ user:CustomUser) {
         
+        self.viewModel.sendVerificationEmail(user: user, handler: { [unowned self] (error) in
+            if let error = error {
+                AlertController.showAlert(self, title: "Ouch!", message: error.localizedDescription)
+            } else {
+                self.viewModel.addUser(user: user) { (error) in
+                    if let error = error {
+                        AlertController.showAlert(self, title: "Ouch", message: error.localizedDescription)
+                        return
+                    } else {
+                        self.delegate.userCreatedSuccessfully()
+                    }
+                }
+            }
+        })
     }
 }

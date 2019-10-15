@@ -26,13 +26,20 @@
 		0413A3AA234910F60061CF9B /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0413A3A9234910F60061CF9B /* UIView+Extensions.swift */; };
 		0413A3AD234B37530061CF9B /* TeamManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0413A3AC234B37520061CF9B /* TeamManager.swift */; };
 		0413A3AF234B3B120061CF9B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0413A3AE234B3B110061CF9B /* GoogleService-Info.plist */; };
+		0417F0532355C4360082590D /* UserProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0417F0522355C4360082590D /* UserProfileViewModel.swift */; };
 		042ADF4E234B700100E6B5A9 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042ADF4D234B700100E6B5A9 /* AlertController.swift */; };
+		0443EAF22355DB8A0077A67C /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443EAF12355DB890077A67C /* StorageService.swift */; };
+		046821542354B81700EBF296 /* FirebaseDBService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046821532354B81700EBF296 /* FirebaseDBService.swift */; };
+		046821562354BBD200EBF296 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046821552354BBD200EBF296 /* Constants.swift */; };
 		04837BC5234B7A6700F40808 /* AuthServise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04837BC4234B7A6700F40808 /* AuthServise.swift */; };
 		04837BC7234B7B6600F40808 /* FirebaseAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04837BC6234B7B6600F40808 /* FirebaseAuthService.swift */; };
 		04837BC9234C762400F40808 /* TextFieldInfoValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04837BC8234C762400F40808 /* TextFieldInfoValidator.swift */; };
 		04837BCB234C7A2D00F40808 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04837BCA234C7A2D00F40808 /* SignInViewModel.swift */; };
 		04837BCD234C7FD400F40808 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04837BCC234C7FD400F40808 /* SignUpViewModel.swift */; };
 		04837BD0234C879000F40808 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04837BCF234C879000F40808 /* MainController.swift */; };
+		04AA2448234DF10200DF3C4F /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA2447234DF10200DF3C4F /* UserProfileViewController.swift */; };
+		04AA244A234F6DB800DF3C4F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA2449234F6DB800DF3C4F /* ProfileView.swift */; };
+		04AA244C234F72F900DF3C4F /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA244B234F72F900DF3C4F /* ImagePicker.swift */; };
 		9D519BB983158C6FB2E5D3B8 /* Pods_Ravel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F82DE110CA18174967B2E56 /* Pods_Ravel.framework */; };
 		DEE8047296C31A0C254DA694 /* Pods_RavelTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8287BC18492F1162F46F8CA2 /* Pods_RavelTests.framework */; };
 		E60849698C7BCA47FF62C39A /* Pods_RavelUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E28DBAA52235C08F8D2322F4 /* Pods_RavelUITests.framework */; };
@@ -82,13 +89,20 @@
 		0413A3A9234910F60061CF9B /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		0413A3AC234B37520061CF9B /* TeamManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamManager.swift; sourceTree = "<group>"; };
 		0413A3AE234B3B110061CF9B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0417F0522355C4360082590D /* UserProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewModel.swift; sourceTree = "<group>"; };
 		042ADF4D234B700100E6B5A9 /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
+		0443EAF12355DB890077A67C /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		046821532354B81700EBF296 /* FirebaseDBService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseDBService.swift; sourceTree = "<group>"; };
+		046821552354BBD200EBF296 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		04837BC4234B7A6700F40808 /* AuthServise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServise.swift; sourceTree = "<group>"; };
 		04837BC6234B7B6600F40808 /* FirebaseAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthService.swift; sourceTree = "<group>"; };
 		04837BC8234C762400F40808 /* TextFieldInfoValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldInfoValidator.swift; sourceTree = "<group>"; };
 		04837BCA234C7A2D00F40808 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		04837BCC234C7FD400F40808 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		04837BCF234C879000F40808 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		04AA2447234DF10200DF3C4F /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		04AA2449234F6DB800DF3C4F /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		04AA244B234F72F900DF3C4F /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		15D840DF6EF1F1876727C965 /* Pods-Ravel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ravel.debug.xcconfig"; path = "Target Support Files/Pods-Ravel/Pods-Ravel.debug.xcconfig"; sourceTree = "<group>"; };
 		29097AE70A80F40B728B3C78 /* Pods-RavelUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RavelUITests.debug.xcconfig"; path = "Target Support Files/Pods-RavelUITests/Pods-RavelUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		2F82DE110CA18174967B2E56 /* Pods_Ravel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ravel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -163,6 +177,7 @@
 				0413A39E23490BE60061CF9B /* SignUpFlow */,
 				0413A38F234774AF0061CF9B /* SignInFlow */,
 				04837BCE234C872B00F40808 /* MainFlow */,
+				04AA2446234DF0C900DF3C4F /* UserProfileFlow */,
 				0413A365234773910061CF9B /* Assets.xcassets */,
 				0413A367234773910061CF9B /* LaunchScreen.storyboard */,
 				0413A36A234773910061CF9B /* Info.plist */,
@@ -223,6 +238,7 @@
 				0413A399234793030061CF9B /* Colors.swift */,
 				042ADF4D234B700100E6B5A9 /* AlertController.swift */,
 				04837BC8234C762400F40808 /* TextFieldInfoValidator.swift */,
+				046821552354BBD200EBF296 /* Constants.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -252,6 +268,7 @@
 			isa = PBXGroup;
 			children = (
 				0413A3AC234B37520061CF9B /* TeamManager.swift */,
+				04AA244B234F72F900DF3C4F /* ImagePicker.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -261,6 +278,8 @@
 			children = (
 				04837BC4234B7A6700F40808 /* AuthServise.swift */,
 				04837BC6234B7B6600F40808 /* FirebaseAuthService.swift */,
+				046821532354B81700EBF296 /* FirebaseDBService.swift */,
+				0443EAF12355DB890077A67C /* StorageService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -271,6 +290,16 @@
 				04837BCF234C879000F40808 /* MainController.swift */,
 			);
 			path = MainFlow;
+			sourceTree = "<group>";
+		};
+		04AA2446234DF0C900DF3C4F /* UserProfileFlow */ = {
+			isa = PBXGroup;
+			children = (
+				04AA2447234DF10200DF3C4F /* UserProfileViewController.swift */,
+				04AA2449234F6DB800DF3C4F /* ProfileView.swift */,
+				0417F0522355C4360082590D /* UserProfileViewModel.swift */,
+			);
+			path = UserProfileFlow;
 			sourceTree = "<group>";
 		};
 		29946DDAA20683E7E278326E /* Pods */ = {
@@ -524,8 +553,13 @@
 				0413A35D234773870061CF9B /* AppDelegate.swift in Sources */,
 				04837BCB234C7A2D00F40808 /* SignInViewModel.swift in Sources */,
 				0413A3A023490C120061CF9B /* SignUpViewController.swift in Sources */,
+				046821562354BBD200EBF296 /* Constants.swift in Sources */,
+				0417F0532355C4360082590D /* UserProfileViewModel.swift in Sources */,
 				04837BC9234C762400F40808 /* TextFieldInfoValidator.swift in Sources */,
 				0413A3A423490CDD0061CF9B /* UIButton+Extensions.swift in Sources */,
+				04AA2448234DF10200DF3C4F /* UserProfileViewController.swift in Sources */,
+				046821542354B81700EBF296 /* FirebaseDBService.swift in Sources */,
+				0443EAF22355DB8A0077A67C /* StorageService.swift in Sources */,
 				0413A3A823490E940061CF9B /* UIImageView.swift in Sources */,
 				0413A3AA234910F60061CF9B /* UIView+Extensions.swift in Sources */,
 				0413A391234774E40061CF9B /* SignInViewController.swift in Sources */,
@@ -533,9 +567,11 @@
 				0413A3A623490D750061CF9B /* SignUpCustomView.swift in Sources */,
 				0413A39723478DDF0061CF9B /* CustomView.swift in Sources */,
 				04837BC7234B7B6600F40808 /* FirebaseAuthService.swift in Sources */,
+				04AA244A234F6DB800DF3C4F /* ProfileView.swift in Sources */,
 				0413A3A223490C580061CF9B /* UITextField+Extensions.swift in Sources */,
 				0413A3942347774A0061CF9B /* User.swift in Sources */,
 				0413A3AD234B37530061CF9B /* TeamManager.swift in Sources */,
+				04AA244C234F72F900DF3C4F /* ImagePicker.swift in Sources */,
 				0413A35F234773870061CF9B /* SceneDelegate.swift in Sources */,
 				04837BC5234B7A6700F40808 /* AuthServise.swift in Sources */,
 			);

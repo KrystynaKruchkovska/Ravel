@@ -9,6 +9,7 @@ target 'Ravel' do
   pod 'Firebase/Database'
   pod 'Firebase/Analytics'
   pod 'FacebookLogin'
+  pod 'Firebase/Storage'
 
   pod 'RxSwift', '~> 5'
   pod 'RxCocoa', '~> 5'

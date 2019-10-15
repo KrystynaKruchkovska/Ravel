@@ -66,7 +66,7 @@ class FirebaseAuthService: AuthService {
                 return
             }
             
-            handler(nil, FirebaseUser(withUser: user))
+            handler(nil, FirebaseUser(withUser: user, nickname: nickname))
         }
         
     }
@@ -102,7 +102,5 @@ class FirebaseAuthService: AuthService {
             handler(nil, FirebaseUser(withUser: user))
         }
     }
-    
-    
     
 }

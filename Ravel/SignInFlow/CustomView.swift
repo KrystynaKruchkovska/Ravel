@@ -25,7 +25,7 @@ class CustomView: UIView {
         
         stackView.anchor(top: nil, paddingTop: 0, bottom: nil, paddingBottom: 0, left: leftAnchor, paddingLeft: 20, right: rightAnchor, paddingRight: 20, centerX: self.centerXAnchor, centerY: self.centerYAnchor, width: 0, height: 300)
         
-        label.anchor(top: self.topAnchor, paddingTop: 200, bottom: nil, paddingBottom: 0, left: nil, paddingLeft: 0, right: nil, paddingRight: 0, centerX: self.centerXAnchor, centerY: nil, width: 0, height: 50)
+        label.anchor(top: nil, paddingTop: 0, bottom: stackView.topAnchor, paddingBottom: 70, left: nil, paddingLeft: 0, right: nil, paddingRight: 0, centerX: self.centerXAnchor, centerY: nil, width: 0, height: 50)
  
     }
     
