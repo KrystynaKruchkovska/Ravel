@@ -16,10 +16,12 @@ class ProfileView: UIView {
         self.addSubview(backgroundImageView)
         self.addSubview(userImageView)
         self.addSubview(imagePickerButton)
+        self.addSubview(logOutButton)
         
         backgroundImageView.anchor(top: topAnchor, paddingTop: 0, bottom: bottomAnchor, paddingBottom: 0, left: leftAnchor, paddingLeft: 0, right: rightAnchor, paddingRight: 0, centerX: nil, centerY: nil,  width: 0, height: 0)
         userImageView.anchor(top: topAnchor, paddingTop: 100, bottom: nil, paddingBottom: 0, left: nil, paddingLeft: 0, right: nil, paddingRight: 0, centerX: centerXAnchor, centerY: nil, width: 80, height: 80)
         imagePickerButton.anchor(top: nil, paddingTop: 0, bottom: nil, paddingBottom: 0, left: nil, paddingLeft: 0, right: nil, paddingRight: 0, centerX: userImageView.centerXAnchor, centerY: userImageView.centerYAnchor, width: 80, height: 80)
+        logOutButton.anchor(top: topAnchor, paddingTop: 100, bottom: nil, paddingBottom: 0, left: nil, paddingLeft: 0, right: rightAnchor, paddingRight: 30, centerX: nil, centerY: nil, width: 50, height: 50)
         
         
     }
@@ -34,11 +36,17 @@ class ProfileView: UIView {
         return button
     }()
     
+    lazy var logOutButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("Log out", for: .normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
+    
     lazy var userImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.layer.cornerRadius = 6
         imageView.layer.masksToBounds = true
-        imageView.image = UIImage (imageLiteralResourceName: "initialImg")
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.isUserInteractionEnabled = false
         return imageView

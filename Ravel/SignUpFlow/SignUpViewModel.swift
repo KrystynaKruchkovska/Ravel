@@ -30,4 +30,5 @@ class SignUpViewModel {
         dbService.addUser(user: user, handler: handler)
     }
     
+    
 }

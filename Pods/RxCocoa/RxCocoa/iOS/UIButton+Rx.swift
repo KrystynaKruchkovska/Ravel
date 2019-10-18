@@ -53,15 +53,15 @@ extension Reactive where Base: UIButton {
 
     /// Reactive wrapper for `setImage(_:for:)`
     public func image(for controlState: UIControl.State = []) -> Binder<UIImage?> {
-        return Binder(self.base) { button, image -> Void in
-            button.setImage(image, for: controlState)
+        return Binder(self.base) { button, profileImage -> Void in
+            button.setImage(profileImage, for: controlState)
         }
     }
 
     /// Reactive wrapper for `setBackgroundImage(_:for:)`
     public func backgroundImage(for controlState: UIControl.State = []) -> Binder<UIImage?> {
-        return Binder(self.base) { button, image -> Void in
-            button.setBackgroundImage(image, for: controlState)
+        return Binder(self.base) { button, profileImage -> Void in
+            button.setBackgroundImage(profileImage, for: controlState)
         }
     }
     

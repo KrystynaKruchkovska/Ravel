@@ -32,11 +32,19 @@ class AppFlowCoordinator: Coordinator {
         rootViewController = UINavigationController()
         window.rootViewController = rootViewController
         window.makeKeyAndVisible()
-        runSignInVC()
+        runInitialController()
+    }
+    
+    private func runInitialController(){
+        if dbService.currentUser != nil {
+            runMainVC()
+        } else {
+            runSignInVC()
+        }
     }
     
     private func runSignInVC() {
-        let vc = SignInViewController(delegate: self, viewModel: SignInViewModel(authService: self.authService))
+        let vc = SignInViewController(delegate: self, viewModel: SignInViewModel(authService: self.authService, dbService: self.dbService, storageService: self.storageService))
         //vc.modalPresentationStyle = .fullScreen
         rootViewController?.show(vc, sender: nil)
     }
@@ -47,7 +55,7 @@ class AppFlowCoordinator: Coordinator {
     }
     
     private func runMainVC() {
-        let vc = MainController(userProfileVM: UserProfileViewModel(dbService: self.dbService, storageService: storageService))
+        let vc = MainController(userProfileVM: UserProfileViewModel(dbService: self.dbService, storageService: storageService, authService: authService))
         rootViewController?.show(vc, sender: nil)
     }
     

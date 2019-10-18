@@ -15,6 +15,8 @@ protocol CustomUser {
     var uid: String { get }
     var providerID: String { get }
     var isEmailVerified: Bool { get }
+    var profileImgUrl: String? { get }
+    var providerProfileImg: String? { get }
     
     func sendEmailVerification(completion: @escaping (Error?) -> ())
 }
@@ -22,25 +24,31 @@ protocol CustomUser {
 
 
 class FirebaseUser : CustomUser {
-
+    
     let user: User
     var _nickname: String
+    var _profileImgStringUrl: String?
     
-    init(withUser user: User, nickname: String = "") {
+    init(withUser user: User, nickname: String = "", profileImgUrl: String? = nil) {
         self.user = user
         self._nickname = nickname
+        _profileImgStringUrl = profileImgUrl
     }
     
     var uid: String {
         get { return self.user.uid }
     }
-
+    
     var providerID: String  {
         get { return self.user.providerID }
     }
     
     var email: String  {
         get { return self.user.email ?? "" }
+    }
+    
+    var providerProfileImg: String? {
+        get { return self.user.photoURL?.absoluteString}
     }
     
     var nickname: String  {
@@ -52,10 +60,15 @@ class FirebaseUser : CustomUser {
             }
         }
     }
-    
+     var profileImgUrl: String? {
+        get {
+            return _profileImgStringUrl
+        }
+    }
     var isEmailVerified: Bool  {
         get { return self.user.isEmailVerified }
     }
+    
     
     func sendEmailVerification(completion: @escaping (Error?) -> ()) {
         self.user.sendEmailVerification(completion: completion)

@@ -30,9 +30,11 @@ class UserProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .yellow
-        
+        setProfileImage()
         self.imagePicker = ImagePicker(presentationController: self, delegate: self)
         customView.imagePickerButton.addTarget(self, action: #selector(showImagePicker), for: .touchDown)
+        
+        customView.logOutButton.addTarget(self, action: #selector(onLogout), for: .touchDown)
         
 
         // Do any additional setup after loading the view.
@@ -42,8 +44,36 @@ class UserProfileViewController: UIViewController {
         return view as! ProfileView
     }
 
+    @objc func onLogout() {
+        viewModel.logOut()
+    }
     @objc func showImagePicker()  {
         self.imagePicker.present(from: self.view)
+    }
+    
+    private func setProfileImage() {
+        if viewModel.dbService.currentUser != nil {
+            viewModel.dbService.readUserProfileImage { (stringUrl) in
+                if let stringUrl = stringUrl, let url = URL(string: stringUrl) {
+                    DispatchQueue.global().async {
+                        let data = try? Data(contentsOf: url) //make sure your image in this url does exist, otherwise unwrap in a if let check / try-catch
+                        let image = UIImage(data: data!)
+                        DispatchQueue.main.async {
+                            self.customView.userImageView.image = image
+                            self.viewModel.storageService.uploadImage(image!) { (imageUrlString) in
+                                if let imageUrlString = imageUrlString {
+                                    self.viewModel.editImage(newValue: imageUrlString)
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        
+        } else {
+             customView.userImageView.image = UIImage (imageLiteralResourceName: "initialImg")
+        }
+        
     }
     
 
@@ -52,8 +82,7 @@ class UserProfileViewController: UIViewController {
 extension UserProfileViewController: ImagePickerDelegate {
     func didSelect(image: UIImage?) {
         customView.userImageView.image = image
-        if let image = image,
-            let imgData = image.pngData() {
+        if let image = image {
             viewModel.storageService.uploadImage(image) { (imageUrlString) in
                 if let imageUrlString = imageUrlString {
                     self.viewModel.editImage(newValue: imageUrlString)

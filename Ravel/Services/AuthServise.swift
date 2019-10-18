@@ -19,4 +19,6 @@ protocol AuthService {
     func resetPassword(email: String, handler: @escaping (_ error: Error?) -> ())
     
     func loginWithFacebook( handler: @escaping (_ error:Error?,_ user: CustomUser?) -> ())
+    
+    func logOut()
 }

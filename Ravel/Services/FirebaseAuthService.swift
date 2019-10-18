@@ -13,7 +13,6 @@ import FacebookCore
 
 
 class FirebaseAuthService: AuthService {
-
     
     func loginWithFacebook(handler: @escaping (Error?, CustomUser?) -> ()) {
         
@@ -25,18 +24,17 @@ class FirebaseAuthService: AuthService {
                     handler(error, nil)
                     return
                 }
+                //User
                 guard let user = dataResult?.user else {
                     return
                 }
                 
+                //FirebaseUser
+
                 handler(nil, FirebaseUser(withUser: user))
             }
         }
-
     }
-    
-    
-    
     
     func resetPassword(email: String, handler: @escaping (_ error: Error?) -> ()) {
         Auth.auth().sendPasswordReset(withEmail: email) { error in
@@ -49,7 +47,6 @@ class FirebaseAuthService: AuthService {
             handler(nil)
         }
     }
-    
     
     func createUser(nickname: String, email: String, password: String, handler: @escaping (_ error: Error?,_ user: CustomUser?) -> ()) {
         Auth.auth().createUser(withEmail: email, password: password) { (authResult, error) in
@@ -103,4 +100,12 @@ class FirebaseAuthService: AuthService {
         }
     }
     
+    func logOut() {
+        do {
+            try Auth.auth().signOut()
+        } catch let err {
+            print(err)
+        }
+        
+    }
 }
